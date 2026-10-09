@@ -1,0 +1,24 @@
+{
+  "tool": "ruff",
+  "status": "passed",
+  "errors": 0,
+  "warnings": 0,
+  "total_findings": 0,
+  "inline_findings": 0,
+  "remaining_findings": 0,
+  "files": [],
+  "report_path": "/repos/iwb-demo/backend/.quality/lint/ruff-result.json",
+  "fix_applied": true,
+  "command": [
+    "/usr/local/bin/ruff",
+    "check",
+    "/app/data/projects/108149ac6c81/output/699d35ece910/repos/iwb-demo/backend",
+    "--output-format",
+    "json",
+    "--fix"
+  ],
+  "exit_code": 0,
+  "stdout": "[]",
+  "stderr": "",
+  "all_findings": []
+}

@@ -1,0 +1,81 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+/backend/build/
+/backend/dist/
+/backend/*.egg-info/
+/backend/.eggs/
+/backend/.venv/
+/backend/venv/
+/backend/ENV/
+*.egg
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Database
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+
+# Node / Frontend
+/frontend/node_modules/
+/frontend/dist/
+/frontend/build/
+/frontend/.vite/
+/frontend/.cache/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment
+.env
+.env.local
+.env.production
+.env.development
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+.DS_Store
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Process IDs
+.pids
+
+# Testing
+coverage/
+.nyc_output/
+test-results.xml
+
+# Verification artifacts
+_test.env
+_server.*
+_start_server.py
+_stop_server.py
+.verification/
+
+# OS
+.DS_Store
+Thumbs.db

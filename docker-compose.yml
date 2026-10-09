@@ -1,0 +1,31 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: iwb-demo-backend
+    env_file:
+      - ./backend/dev.env
+    environment:
+      DATABASE_URL: sqlite:////data/app.db
+    volumes:
+      - backend-data:/data
+    ports:
+      - "8000:8000"
+    x-preview-port: 8000
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        BACKEND_HOST: backend
+    container_name: iwb-demo-frontend
+    depends_on:
+      - backend
+    ports:
+      - "80:80"
+    x-preview-port: 80
+
+volumes:
+  backend-data:
